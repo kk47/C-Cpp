@@ -14,7 +14,7 @@ int main()
     s4 = "/mnt/dayu" + s2;
     s2 = "kk";
     char c = s1[s1.length() - 1];
-    cout << s1 << endl;
+    cout << s1 << ":" << s1.length() << endl;
     cout << s2 << endl;
     cout << s3 << endl;
     cout << s4.c_str() << endl;

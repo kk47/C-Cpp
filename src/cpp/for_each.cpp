@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <boost/foreach.hpp>
 
 using namespace std;
 
@@ -25,5 +26,14 @@ int main()
     vector<int> myvector;
     FillValue(myvector, 1, 10);
     for_each(myvector.begin(), myvector.end(), print);
-    cout <<endl;
+    cout << endl;
+    BOOST_FOREACH(int item, myvector) {
+        if (item > 5) {
+            cout << item << " is big than 5" << endl;
+        } else {
+            cout << item << " is small than 5" << endl;
+        }
+    }
+
+    return 0;
 }
