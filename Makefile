@@ -1,6 +1,6 @@
 include common.def
 
-DIRS = deppends boost c++
+DIRS = deppends boost src
 
 ifeq ($(TARGETOS), WINDOWS)
 DIRS += win32
