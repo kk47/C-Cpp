@@ -6,6 +6,10 @@ char* getname(void);
 
 int main()
 {
+    int argc = 0;
+    char* argv1 = "ls";
+    std::cout << *argv1 << std::endl;
+
     char* name;
     name = getname();
     cout << name << " at " << (int* )name << "\n";
