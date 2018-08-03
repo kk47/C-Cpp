@@ -35,5 +35,13 @@ int main()
     for(; it != mymap.end(); ++it) {
         std::cout << it->first << " " << it->second << std::endl;
     }
+    it = mymap.find("kk-d12");
+    if(it != mymap.end()) {
+        it->second = "UP-d12";
+    }
+    it = mymap.begin();
+    for(; it != mymap.end(); ++it) {
+        std::cout << it->first << " " << it->second << std::endl;
+    }
     return 0;
 }
